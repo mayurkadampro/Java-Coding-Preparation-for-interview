@@ -1,5 +1,5 @@
 import java.util.*;
-public class UserInputLagreNum
+public class LagreNumByMethod
 {
 	public static void main(String args[])
 	{
