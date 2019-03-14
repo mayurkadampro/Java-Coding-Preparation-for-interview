@@ -4,7 +4,7 @@ public class MissingNumberSecond
 {
 	public static void main(String args[])
 	{
-		calMissingNumber(new int[]{1,2,3,5,7,8,10});
+		calMissingNumber(new int[]{1,3,6,9});
 	}
 	
 	static void calMissingNumber(int arr[])
@@ -18,8 +18,10 @@ public class MissingNumberSecond
 			{
 				System.out.println("Missing Number is :"+i);
 				j--;
+				System.out.println("Decrement j is : "+j);
 			}
 			j++;
+			System.out.println("incecrement j is : "+j);
 		}
 	}
 }
