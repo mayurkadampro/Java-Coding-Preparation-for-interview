@@ -11,7 +11,7 @@ public class ReverseStringByRecursion
 	
 	static String reverseString(String str)
 	{
-		if (str.isEmpty())
+		if (str.isEmpty() || str == null || str.length() <= 0)
             return str;
 		//Calling Function Recursively
 		return reverseString(str.substring(1)) + str.charAt(0);
