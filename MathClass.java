@@ -23,13 +23,23 @@ public class MathClass
 	/* Use of floor method method returns the floor value of an argument.
 	i.e. the closest integer value which is either less or equal to the the passed argument. 
 	eg : 101.23 has floor value = 101 */
-    double f1 = 30.56, f2 = -56.34; 
-    f1 = Math.floor(f1); 
-    System.out.println("Floor value of 30.56 : "+f1); 
-  
-    f2 =Math.floor(f2); 
-    System.out.println("Floor value of -56.34 : "+f2); 
+    double f1 = 30.56, f2 = -56.34;  
+    System.out.println("Floor value of 30.56 : "+Math.floor(f1)); 
+   
+    System.out.println("Floor value of -56.34 : "+Math.floor(f2)); 
     System.out.println(""); 
+	
+	//ceil function
+	System.out.println("Ceil value of 30.56 : "+Math.ceil(f1)); 
+   
+    System.out.println("Ceil value of -56.34 : "+Math.ceil(f2)); 
+    System.out.println("");
+	
+	// Use of round() method  
+    System.out.println("Round off 30.56  = " + Math.round(f1)); 
+	
+    System.out.println("Round off -56.34 = " + Math.round(f2)); 
+    System.out.println("");
     
     // Use of log() method 
     double l = 10; 
@@ -44,19 +54,11 @@ public class MathClass
   
     signm = Math.signum(y); 
     System.out.println("Signum of -23.34 = " + signm); 
-    System.out.println(""); 
-  
-    // Use of round() method 
-    double r1 = Math.round(x); 
-    System.out.println("Round off 10.4556  = " + r1); 
-  
-    double r2 = Math.round(y); 
-    System.out.println("Round off 23.34789 = " + r2); 
-    System.out.println(""); 
+    System.out.println("");  
   
     // Use of max() method on r1 and r2 
-    double m = Math.max(r1, r2); 
-    System.out.println("Max b/w r1 and r2 = " + r2);
+    //double m = Math.max(r1, r2); 
+    //System.out.println("Max b/w r1 and r2 = " + r2);
 	
 	
 		
