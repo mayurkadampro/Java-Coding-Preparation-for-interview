@@ -1,4 +1,5 @@
-#How to create Immutable class in Java?
+# How to create Immutable class in Java?
+
 Immutable class means that once an object is created, we cannot change its content. In Java, all the wrapper classes (like String, Boolean, Byte, Short) and String class is immutable. We can create our own immutable class as well
 
 Following are the requirements:
@@ -7,5 +8,3 @@ Following are the requirements:
 • A parameterized constructor
 • Getter method for all the variables in it
 • No setters(To not have option to change the value of the instance variable) 
-
-# 
