@@ -17,3 +17,15 @@ static void staircase(int n)
         System.out.println();
     }
 }
+
+/*
+Sample Input
+6 
+Sample Output
+     #
+    ##
+   ###
+  ####
+ #####
+######
+*/
