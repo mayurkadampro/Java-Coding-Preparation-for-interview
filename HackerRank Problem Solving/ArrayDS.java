@@ -11,3 +11,15 @@ static int[] reverseArray(int[] a) {
 	}
 	return arr;
 }
+
+
+// alternative way to print reverse array
+static int[] reverseArray(int[] a, int start, int end) {
+	int temp; 
+        if (start >= end) 
+            return a;
+        temp = a[start]; 
+        a[start] = a[end]; 
+        a[end] = temp; 
+        return reverseArray(a,start+1,end-1); // call in main by reverseArray(arr,0,arr.length-1)
+}
