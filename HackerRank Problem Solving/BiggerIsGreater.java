@@ -16,7 +16,6 @@
     static String nextPermutation(char[] array) {
     // Find non-increasing suffix
     int i = array.length - 1;
-    String s1 = new String();
     while (i > 0 && array[i - 1] >= array[i])
         i--;
     if (i <= 0)
