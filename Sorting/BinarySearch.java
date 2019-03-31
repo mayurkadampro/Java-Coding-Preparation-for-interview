@@ -2,7 +2,7 @@ import java.util.*;
 class BinarySearch{
 	public static void main(String args[]){
 		BinarySearch bs = new BinarySearch();
-		bs.calBinarySearch(new int[]{1,5,9,8,18,19,25,65,555},9);
+		bs.calBinarySearch(new int[]{1,5,8,9,18,19,25,65},19);
 	}
 	
 	void calBinarySearch(int[] arr,int search){
@@ -14,7 +14,7 @@ class BinarySearch{
 	while(start<=last)
 	{
 		if(arr[middle] == search){
-			System.out.println("Elements found at"+arr[middle]+"index");
+			System.out.println("Elements found at "+middle+" index");
 			break;
 		}else if(arr[middle]<search){
 			start = middle+1;
@@ -23,9 +23,8 @@ class BinarySearch{
 		}
 		middle = (start+last)/2;
 	}
-	
-	if(last>start)
-		System.out.println("Elemsnts not Foenf");
+	if(start > last)
+		System.out.println("Element not Found");
 	
 	}
 }
