@@ -10,7 +10,7 @@ class Pattern26{
 	static void drawPattern(int rows){
 		for(int i=1;i<=rows;i++){
 			for(int j=rows; j>=i;j--){
-				if(j!=rows-1 || j!=i+1){
+				if(j==rows || j==i || j==1){
 					System.out.print("* ");
 				}
 			}
