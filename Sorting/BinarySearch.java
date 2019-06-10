@@ -1,30 +1,28 @@
-import java.util.*;
+import java.util.Arrays;
 class BinarySearch{
 	public static void main(String args[]){
-		BinarySearch bs = new BinarySearch();
-		bs.calBinarySearch(new int[]{1,5,8,9,18,19,25,65},19);
-	}
-	
-	void calBinarySearch(int[] arr,int search){
-		int start = 0;
-		int last = arr.length - 1;
-		int middle = (start+last) / 2;
-		
-		
-	while(start<=last)
-	{
-		if(arr[middle] == search){
-			System.out.println("Elements found at "+middle+" index");
-			break;
-		}else if(arr[middle]<search){
-			start = middle+1;
+		int index = binarySearch(new int[]{9,5,8,6,4,3,2,1,11},11);
+		if(index>=0){
+			System.out.println("Element at index : "+index);
 		}else{
-			last = middle-1;
+			System.out.println("Element not found.");
 		}
-		middle = (start+last)/2;
 	}
-	if(start > last)
-		System.out.println("Element not Found");
-	
+	static int binarySearch(int[] arr,int searchElement){
+		Arrays.sort(arr); // for binarySearch search sorted array is require.
+		int start = 0;
+		int last = arr.length-1;
+		int mid = arr.length/2;		
+		while(start <= last){
+			if(searchElement == arr[mid]){
+				return mid;
+			}else if(arr[mid] < searchElement){
+				start = mid+1;
+			}else{ 
+				last = mid-1; 
+			}
+			mid = (start+last)/2;
+		}
+		return -1;
 	}
 }
